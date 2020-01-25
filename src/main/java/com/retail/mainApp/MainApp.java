@@ -16,13 +16,15 @@ import com.retails.model.User;
 import com.retails.service.DiscountService;
 import com.retails.serviceImpl.DiscountServiceImpl;
 
+/*
+ * If you want to run the application , you can run it from MainApp class
+ * result will be printed on console
+ */
 public class MainApp {
 	
-	public static void main(String args[]) throws Exception {
-		
 	
-		User user=new User(UserType.EMPLOYEE, "james", "989898989", "Delhi",true);
-		
+	public static void main(String args[]) throws Exception {	
+		User user=new User(UserType.EMPLOYEE, "james", "989898989", "Delhi",true);		
 		Product p1=new Product("apple", 100, ItemType.GROCERY, 21, 2);
 		Product p2=new Product("jeans", 1000, ItemType.OTHER, 212, 1);
 		

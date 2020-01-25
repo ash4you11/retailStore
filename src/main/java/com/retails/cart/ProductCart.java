@@ -33,8 +33,6 @@ public class ProductCart {
 	        double finalAmountToPay=0;	        
 	        for (Product product : productList) {
 	        	unitTotalPrice = product.getProductPrice()*product.getProductCount();
-	        	System.out.println(unitTotalPrice);
-	        	System.out.println("unitTotalPrice : "+unitTotalPrice);
 	        	if(product.getProductType()==ItemType.OTHER) {
 	        		finalAmountToPay+=discountService.calculateDiscount(unitTotalPrice, user);
 	        	}else {

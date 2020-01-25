@@ -1,6 +1,5 @@
 package com.retails.model;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 import com.retails.constants.UserType;

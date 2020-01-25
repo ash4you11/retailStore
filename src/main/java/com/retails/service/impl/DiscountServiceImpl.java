@@ -1,4 +1,4 @@
-package com.retails.serviceImpl;
+package com.retails.service.impl;
 
 import com.retails.constants.UserType; 
 import com.retails.model.User;
@@ -11,7 +11,6 @@ public class DiscountServiceImpl implements DiscountService {
 
 
 	public double calculateDiscount(double totalAmount, User user) {
-		// TODO Auto-generated method stub
 		
 		if(user.getType()==UserType.AFFILIATE) {
 			return totalAmount-(totalAmount*(.1));
@@ -31,9 +30,8 @@ public class DiscountServiceImpl implements DiscountService {
 	} 
 
 	public double extraDiscountOnBill(double totalAmount) {
-		// TODO Auto-generated method stub
 		int discountCounter = (int) totalAmount / 100;
-		double discount = discountCounter * 5;
+		double discount =(double) discountCounter * 5;
 		return totalAmount - discount; 
 	}
 

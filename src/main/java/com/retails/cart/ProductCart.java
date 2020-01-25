@@ -1,22 +1,16 @@
 package com.retails.cart;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
-
 import com.retails.constants.ItemType;
-import com.retails.constants.UserType;
 import com.retails.model.Product;
 import com.retails.model.User;
 import com.retails.service.DiscountService;
-import com.retails.serviceImpl.DiscountServiceImpl;
+import com.retails.service.impl.DiscountServiceImpl;
 
 
 
 public class ProductCart {
-	 	//private Map<Product, Integer> quantities;
 	    private DiscountService discountService=new DiscountServiceImpl();
 	    private User user;
 	    Date date;

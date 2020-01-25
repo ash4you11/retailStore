@@ -16,7 +16,7 @@ import com.retails.model.User;
 public class MainApp {
 	
 	
-	public static void main(String... args) {	
+	public static void main(String... args)  {	
 		User user=new User(UserType.EMPLOYEE, "james", "989898989", "Delhi",true);		
 		Product p1=new Product("apple", 100, ItemType.GROCERY, 21, 2);
 		Product p2=new Product("jeans", 1000, ItemType.OTHER, 212, 1);
